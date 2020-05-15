@@ -1,0 +1,815 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@drawable/gradient1">
+
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/swi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/scrollView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                tools:ignore="ExtraText">
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp" />
+
+                <TextView
+                    android:id="@+id/textView35"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/basic"
+                    android:text="Total Cases"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="#54C7FF"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView36"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textColor="#50BFF4"
+                    android:textSize="55sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView37"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textColor="#54C7FF"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp" />
+
+                <TextView
+                    android:id="@+id/textView28"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/basic"
+                    android:text="Recovered"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="#7CFF98"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView29"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textColor="#7CFF98"
+                    android:textSize="55sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView30"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textColor="#7CFF98"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/basic"
+                    android:text="Deaths"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="#FF8076"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView22"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textColor="#FF8076"
+                    android:textSize="55sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView23"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textColor="#FF8076"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp" />
+
+                <com.github.mikephil.charting.charts.BarChart
+                    android:id="@+id/barchart"
+                    android:layout_width="350dp"
+                    android:layout_height="350dp"
+                    android:layout_gravity="center"
+                    android:clickable="false">
+
+                </com.github.mikephil.charting.charts.BarChart>
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="10dp" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Daily new cases"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp" />
+
+                <ImageView
+                    android:id="@+id/map1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/todo"
+                    app:srcCompat="@color/cardview_shadow_end_color" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Total Confirmed Cases"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="10000+"
+                    android:textAlignment="center"
+                    android:textColor="#880000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="5000-9999"
+                    android:textAlignment="center"
+                    android:textColor="#D40000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1000-4999"
+                    android:textAlignment="center"
+                    android:textColor="#FF2A2A"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="500-999"
+                    android:textAlignment="center"
+                    android:textColor="#FF5555"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="100-499"
+                    android:textAlignment="center"
+                    android:textColor="#FF8080"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="50-99"
+                    android:textAlignment="center"
+                    android:textColor="#FFAAAA"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1-49 "
+                    android:textAlignment="center"
+                    android:textColor="#FFD5D5"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp" />
+
+                <it.gilvegliach.android.transparenttexttextview.TransparentTextTextView
+                    android:id="@+id/R1"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="17dp"
+                    android:background="@drawable/rounded_text"
+                    android:fontFamily="@font/basic"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp"
+                    android:textStyle="normal" />
+
+                <it.gilvegliach.android.transparenttexttextview.TransparentTextTextView
+                    android:id="@+id/R2"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="17dp"
+                    android:background="@drawable/rounded_text"
+                    android:fontFamily="@font/basic"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp"
+                    android:textStyle="normal" />
+
+                <it.gilvegliach.android.transparenttexttextview.TransparentTextTextView
+                    android:id="@+id/R3"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="17dp"
+                    android:background="@drawable/rounded_text"
+                    android:fontFamily="@font/basic"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp"
+                    android:textStyle="normal" />
+
+                <it.gilvegliach.android.transparenttexttextview.TransparentTextTextView
+                    android:id="@+id/R4"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="17dp"
+                    android:background="@drawable/rounded_text"
+                    android:fontFamily="@font/basic"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp"
+                    android:textStyle="normal" />
+
+                <it.gilvegliach.android.transparenttexttextview.TransparentTextTextView
+                    android:id="@+id/R5"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="17dp"
+                    android:background="@drawable/rounded_text"
+                    android:fontFamily="@font/basic"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp"
+                    android:textStyle="normal" />
+
+                <it.gilvegliach.android.transparenttexttextview.TransparentTextTextView
+                    android:id="@+id/R6"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="17dp"
+                    android:background="@drawable/rounded_text"
+                    android:fontFamily="@font/basic"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp"
+                    android:textStyle="normal" />
+
+                <it.gilvegliach.android.transparenttexttextview.TransparentTextTextView
+                    android:id="@+id/R7"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="17dp"
+                    android:background="@drawable/rounded_text"
+                    android:fontFamily="@font/basic"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp"
+                    android:textStyle="normal" />
+
+                <it.gilvegliach.android.transparenttexttextview.TransparentTextTextView
+                    android:id="@+id/R8"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="17dp"
+                    android:background="@drawable/rounded_text"
+                    android:fontFamily="@font/basic"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp"
+                    android:textStyle="normal" />
+
+                <it.gilvegliach.android.transparenttexttextview.TransparentTextTextView
+                    android:id="@+id/R9"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="17dp"
+                    android:background="@drawable/rounded_text"
+                    android:fontFamily="@font/basic"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp"
+                    android:textStyle="normal" />
+
+                <it.gilvegliach.android.transparenttexttextview.TransparentTextTextView
+                    android:id="@+id/R10"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="17dp"
+                    android:background="@drawable/rounded_text"
+                    android:fontFamily="@font/basic"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp"
+                    android:textStyle="normal" />
+
+                <it.gilvegliach.android.transparenttexttextview.TransparentTextTextView
+                    android:id="@+id/R11"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="17dp"
+                    android:background="@drawable/rounded_text"
+                    android:fontFamily="@font/basic"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp"
+                    android:textStyle="normal" />
+
+                <it.gilvegliach.android.transparenttexttextview.TransparentTextTextView
+                    android:id="@+id/R12"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="17dp"
+                    android:background="@drawable/rounded_text"
+                    android:fontFamily="@font/basic"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp"
+                    android:textStyle="normal" />
+
+                <it.gilvegliach.android.transparenttexttextview.TransparentTextTextView
+                    android:id="@+id/R13"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="17dp"
+                    android:background="@drawable/rounded_text"
+                    android:fontFamily="@font/basic"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp"
+                    android:textStyle="normal" />
+
+                <it.gilvegliach.android.transparenttexttextview.TransparentTextTextView
+                    android:id="@+id/R14"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="17dp"
+                    android:background="@drawable/rounded_text"
+                    android:fontFamily="@font/basic"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp"
+                    android:textStyle="normal" />
+
+                <it.gilvegliach.android.transparenttexttextview.TransparentTextTextView
+                    android:id="@+id/R15"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="17dp"
+                    android:background="@drawable/rounded_text"
+                    android:fontFamily="@font/basic"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp"
+                    android:textStyle="normal" />
+
+                <it.gilvegliach.android.transparenttexttextview.TransparentTextTextView
+                    android:id="@+id/R16"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="17dp"
+                    android:background="@drawable/rounded_text"
+                    android:fontFamily="@font/basic"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp"
+                    android:textStyle="normal" />
+
+                <it.gilvegliach.android.transparenttexttextview.TransparentTextTextView
+                    android:id="@+id/R17"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="17dp"
+                    android:background="@drawable/rounded_text"
+                    android:fontFamily="@font/basic"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp"
+                    android:textStyle="normal" />
+
+                <it.gilvegliach.android.transparenttexttextview.TransparentTextTextView
+                    android:id="@+id/R18"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="17dp"
+                    android:background="@drawable/rounded_text"
+                    android:fontFamily="@font/basic"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp"
+                    android:textStyle="normal" />
+
+                <it.gilvegliach.android.transparenttexttextview.TransparentTextTextView
+                    android:id="@+id/R19"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="17dp"
+                    android:background="@drawable/rounded_text"
+                    android:fontFamily="@font/basic"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp"
+                    android:textStyle="normal" />
+
+                <it.gilvegliach.android.transparenttexttextview.TransparentTextTextView
+                    android:id="@+id/R20"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="17dp"
+                    android:background="@drawable/rounded_text"
+                    android:fontFamily="@font/basic"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp"
+                    android:textStyle="normal" />
+
+                <it.gilvegliach.android.transparenttexttextview.TransparentTextTextView
+                    android:id="@+id/R21"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="17dp"
+                    android:background="@drawable/rounded_text"
+                    android:fontFamily="@font/basic"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp"
+                    android:textStyle="normal" />
+
+                <it.gilvegliach.android.transparenttexttextview.TransparentTextTextView
+                    android:id="@+id/R22"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="17dp"
+                    android:background="@drawable/rounded_text"
+                    android:fontFamily="@font/basic"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp"
+                    android:textStyle="normal" />
+
+                <it.gilvegliach.android.transparenttexttextview.TransparentTextTextView
+                    android:id="@+id/R23"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="17dp"
+                    android:background="@drawable/rounded_text"
+                    android:fontFamily="@font/basic"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp"
+                    android:textStyle="normal" />
+
+                <it.gilvegliach.android.transparenttexttextview.TransparentTextTextView
+                    android:id="@+id/R24"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="17dp"
+                    android:background="@drawable/rounded_text"
+                    android:fontFamily="@font/basic"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp"
+                    android:textStyle="normal" />
+
+                <it.gilvegliach.android.transparenttexttextview.TransparentTextTextView
+                    android:id="@+id/R25"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="17dp"
+                    android:background="@drawable/rounded_text"
+                    android:fontFamily="@font/basic"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp"
+                    android:textStyle="normal" />
+
+                <it.gilvegliach.android.transparenttexttextview.TransparentTextTextView
+                    android:id="@+id/R26"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="17dp"
+                    android:background="@drawable/rounded_text"
+                    android:fontFamily="@font/basic"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp"
+                    android:textStyle="normal" />
+
+                <it.gilvegliach.android.transparenttexttextview.TransparentTextTextView
+                    android:id="@+id/R27"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="17dp"
+                    android:background="@drawable/rounded_text"
+                    android:fontFamily="@font/basic"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp"
+                    android:textStyle="normal" />
+
+                <it.gilvegliach.android.transparenttexttextview.TransparentTextTextView
+                    android:id="@+id/R28"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="17dp"
+                    android:background="@drawable/rounded_text"
+                    android:fontFamily="@font/basic"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp"
+                    android:textStyle="normal" />
+
+                <it.gilvegliach.android.transparenttexttextview.TransparentTextTextView
+                    android:id="@+id/R29"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="17dp"
+                    android:background="@drawable/rounded_text"
+                    android:fontFamily="@font/basic"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp"
+                    android:textStyle="normal" />
+
+                <it.gilvegliach.android.transparenttexttextview.TransparentTextTextView
+                    android:id="@+id/R30"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="17dp"
+                    android:background="@drawable/rounded_text"
+                    android:fontFamily="@font/basic"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp"
+                    android:textStyle="normal" />
+
+                <it.gilvegliach.android.transparenttexttextview.TransparentTextTextView
+                    android:id="@+id/R31"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="17dp"
+                    android:background="@drawable/rounded_text"
+                    android:fontFamily="@font/basic"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp"
+                    android:textStyle="normal" />
+
+                <it.gilvegliach.android.transparenttexttextview.TransparentTextTextView
+                    android:id="@+id/R32"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="17dp"
+                    android:background="@drawable/rounded_text"
+                    android:fontFamily="@font/basic"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp"
+                    android:textStyle="normal" />
+
+                <it.gilvegliach.android.transparenttexttextview.TransparentTextTextView
+                    android:id="@+id/R33"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="17dp"
+                    android:background="@drawable/rounded_text"
+                    android:fontFamily="@font/basic"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp"
+                    android:textStyle="normal" />
+
+                <it.gilvegliach.android.transparenttexttextview.TransparentTextTextView
+                    android:id="@+id/R34"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="17dp"
+                    android:background="@drawable/rounded_text"
+                    android:fontFamily="@font/basic"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp"
+                    android:textStyle="normal" />
+
+                <it.gilvegliach.android.transparenttexttextview.TransparentTextTextView
+                    android:id="@+id/R35"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="17dp"
+                    android:background="@drawable/rounded_text"
+                    android:fontFamily="@font/basic"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp"
+                    android:textStyle="normal" />
+
+                <it.gilvegliach.android.transparenttexttextview.TransparentTextTextView
+                    android:id="@+id/R36"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="17dp"
+                    android:background="@drawable/rounded_text"
+                    android:fontFamily="@font/basic"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp"
+                    android:textStyle="normal" />
+
+                <it.gilvegliach.android.transparenttexttextview.TransparentTextTextView
+                    android:id="@+id/R37"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="17dp"
+                    android:background="@drawable/rounded_text"
+                    android:fontFamily="@font/basic"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp"
+                    android:textStyle="normal" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+
+            </LinearLayout>
+        </ScrollView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
